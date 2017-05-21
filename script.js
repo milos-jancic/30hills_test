@@ -253,6 +253,7 @@ peopleTable(people);
   
 
 function friendsTable (id) {
+    document.getElementById("friends").innerHTML ="<tr><th>First Name: </th><th>Surname : </th><th>Age: </th><th>Gender: </th></tr>";
     var directFriends;
     var fill;
     
