@@ -255,6 +255,7 @@ peopleTable(people);
 function friendsTable (id) {
 	document.getElementById("friends").innerHTML ="<tr><th>First Name: </th><th>Surname : </th><th>Age: </th><th>Gender: </th></tr>";
     var directFriends;
+    var fill;
     
     for(var i = 0; i < people.length; i++) {
 	 	if(id == people[i].id) {
@@ -266,7 +267,7 @@ function friendsTable (id) {
 	 for(var i = 0; i < directFriends.length; i++) {
 	 	for(var j = 0; j < people.length; j++) {
 	 		if(directFriends[i] == people[j].id) {
-	 			fill = "";
+	 		fill = "";
 		    	fill = "<tr>";
 		        fill += '<td>' + people[j].firstName + '</td>';
 		        fill += '<td>' + people[j].surname + '</td>';
